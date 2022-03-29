@@ -1,4 +1,6 @@
-FROM python:3.6
+FROM python:3.9-slim-buster
+
+LABEL author="Suresh Kumar <sureshbtech45@gmail.com>"
 
 #update
 RUN apt-get update

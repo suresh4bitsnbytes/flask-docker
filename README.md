@@ -5,15 +5,16 @@ Dockerize a flask app with gunicorn and nginx.
 
   
 
-### Dockerize flask app
+### Docker Compose
 
 ```sh
 
-docker build -t <tag-name>  api/
-docker run -it -p 5000:5000 --name <container-name> <image-name/id>
+docker-compose build
+docker-compose up
 ```
 
 ### To access the api
 ```sh
-curl http://localhost:5000/users
+curl http://localhost:80/users
+
 ```
